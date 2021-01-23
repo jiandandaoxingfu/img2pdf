@@ -1,0 +1,38 @@
+<!--
+* @Author:             old jia
+* @Email:              jiaminxin@outlook.com
+* @Date:               2021-01-23 18:07:22
+* @Last Modified by:   Administrator
+* @Last Modified time: 2021-01-23 20:24:30
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="favicon.ico"/>
+	<title>图片转pdf文件</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+<body align="center">
+
+	<div id="images-select">
+		<a href="javascript:;">选择图片
+            <input type="file" multiple="multiple" accept="image/png,image/jpeg,image/jpg,image/pic" id='upload' onchange='init_images();'/>
+        </a>
+	</div>
+
+	<div id="quality-select">
+		<span>清晰度</span></br>
+		<a href="javascript:;" onclick="set_qualtiy('low');">低</a>
+		<a href="javascript:;" onclick="set_qualtiy('middle');">中</a>
+		<a href="javascript:;" onclick="set_qualtiy('high');">高</a>
+	</div>
+
+
+	<div class="page middle">
+		<canvas id="canvas" width="100px" height="100px"></canvas>
+	</div>
+
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
